@@ -6,4 +6,5 @@ public class ProjectileSpellDescription : SpellDescription
     [Header("Projectile")]
     public GameObject ProjectilePrefab;
     public float ProjectileSpawnDelay;
+    public AbilityUIs AbilityUI;
 }

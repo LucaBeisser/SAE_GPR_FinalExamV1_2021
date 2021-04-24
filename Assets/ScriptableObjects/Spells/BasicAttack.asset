@@ -22,3 +22,6 @@ MonoBehaviour:
   AnimationVariableName: SimpleAttack
   ProjectilePrefab: {fileID: 428208472238148140, guid: 8f137eecfdb312b4ba2dfd66eda62da3, type: 3}
   ProjectileSpawnDelay: 0.375
+  AbilityUI:
+    GrowMultiplicator: 1.74
+    TransitionTime: 0.59

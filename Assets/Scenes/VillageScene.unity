@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.26178434, g: 0.36702713, b: 0.44456154, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6325,6 +6325,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8683692249949569691, guid: 99e86460e9bfcf644956d799c342fee2, type: 3}
   m_PrefabInstance: {fileID: 212332684}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &212389191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 747525276, guid: 6a02c65e5d22fa14b891cdec6695a56e, type: 3}
+  m_PrefabInstance: {fileID: 416148169}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08000deec90b1924db1ad2782ae1b320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &214445936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16097,6 +16108,18 @@ PrefabInstance:
     - target: {fileID: 7294181437124901707, guid: 91b6b57c44ad937458ed73bc6b1700c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545065591762958709, guid: 91b6b57c44ad937458ed73bc6b1700c8, type: 3}
+      propertyPath: playerHud
+      value: 
+      objectReference: {fileID: 212389191}
+    - target: {fileID: 7545065591762958709, guid: 91b6b57c44ad937458ed73bc6b1700c8, type: 3}
+      propertyPath: _simpleSpellAbilityUI.TransitionTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545065591762958709, guid: 91b6b57c44ad937458ed73bc6b1700c8, type: 3}
+      propertyPath: _simpleSpellAbilityUI.GrowMultiplicator
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7958410239221670385, guid: 91b6b57c44ad937458ed73bc6b1700c8, type: 3}
       propertyPath: m_Name

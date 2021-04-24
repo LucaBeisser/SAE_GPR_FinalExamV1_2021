@@ -11,6 +11,7 @@ public class SpellCastingController : MonoBehaviour, IPlayerAction
     [SerializeField] private Animator animator;
     [SerializeField] private Transform castLocationTransform;
     [SerializeField] private ProjectileSpellDescription simpleAttackSpell;
+    [SerializeField] private PlayerHud playerHud;
 
 
     private bool inAction;
@@ -48,6 +49,7 @@ public class SpellCastingController : MonoBehaviour, IPlayerAction
 
         yield return new WaitForSeconds(simpleAttackSpell.ProjectileSpawnDelay);
 
+        playerHud.ActivateAbility(simpleAttackSpell.AbilityUI);
         Instantiate(simpleAttackSpell.ProjectilePrefab, castLocationTransform.position, castLocationTransform.rotation);
 
         yield return new WaitForSeconds(simpleAttackSpell.Duration - simpleAttackSpell.ProjectileSpawnDelay);
