@@ -15,6 +15,7 @@ public class Drop : ScriptableObject
     public string Description;
 
     public DropRarity Rarity;
+    public ProjectileSpellDescription SpecialAbilityDrop;
 }
 
 public enum DropRarity
