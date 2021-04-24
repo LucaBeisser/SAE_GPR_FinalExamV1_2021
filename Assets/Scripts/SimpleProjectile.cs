@@ -6,6 +6,7 @@ public class SimpleProjectile : MonoBehaviour
     [SerializeField] private float velocity;
     [SerializeField] private float damage;
     [SerializeField] private float selfdestructTime = 10;
+    [SerializeField] private ParticleSystem hitEffect;
 
     private void Start()
     {
@@ -18,6 +19,10 @@ public class SimpleProjectile : MonoBehaviour
         if (other.TryGetComponent(out IDamagable damagable))
         {
             damagable.TakeDamage(damage);
+
+            //Spawn the effect and play it
+            ParticleSystem effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            effect.Play();
         }
         Destroy(gameObject);
     }
