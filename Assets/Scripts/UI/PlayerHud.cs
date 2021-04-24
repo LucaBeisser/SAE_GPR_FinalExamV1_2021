@@ -57,7 +57,7 @@ public class PlayerHud : MonoBehaviour
         StartCoroutine(ShrinkSpecialAbilityCoroutine(abilityUI.TransitionTime));
     }
 
-
+    //Shrinks the slot down to a scale of (1f,1f,1f)
     private IEnumerator ShrinkAbilityCoroutine(float shrinkTime)
     {
         float value = (ability.localScale.x - 1f) / shrinkTime;

@@ -11,10 +11,13 @@ public class LootDescription : ScriptableObject
     }
 
     public Drop SelectDropRandomly()
-    {        
+    {
+        //For Unit Test if description is empty drop nothing
+        if (drops.Length == 0) return null;
+
         for (int i = 0; i < drops.Length; i++)
         {
-            //select an random item out of array, so that the drop rates are correct
+            //select an random item out of array, so that the drop rates are correct and the order doesn't matter
             int rndIndex = Random.Range(0, drops.Length);
 
             float rnd = Random.value;

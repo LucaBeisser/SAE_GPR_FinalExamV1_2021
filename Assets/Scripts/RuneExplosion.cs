@@ -16,6 +16,7 @@ public class RuneExplosion : MonoBehaviour
 
     private void DealDamage()
     {
+        //All gameObjects with an IDamagable get damage inside a certain radius
         Collider[] collider = Physics.OverlapSphere(transform.position, damageRadius);
 
         for (int i = 0; i < collider.Length; i++)
