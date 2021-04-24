@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe027bb29072f8549ab32d3bf0b20a52, type: 3}
+  m_Name: Fire Trap
+  m_EditorClassIdentifier: 
+  SpellName: Fire Trap
+  Description: Eve places a rune on the floor which explodes when hit by an enemy,
+    dealing damage to all enemies in an area
+  SpellIcon: {fileID: 21300000, guid: 6e7451a3e6c5edb4aa5ce0fa9c5ac259, type: 3}
+  Duration: 1
+  Cooldown: 1
+  AnimationVariableName: ChannelDown
+  ProjectilePrefab: {fileID: 428208472238148140, guid: c038b546effbda44ba9216b7cb52a017, type: 3}
+  ProjectileSpawnDelay: 1.5
+  AbilityUI:
+    GrowMultiplicator: 1.74
+    TransitionTime: 0.59
