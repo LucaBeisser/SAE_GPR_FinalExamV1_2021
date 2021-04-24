@@ -11,18 +11,23 @@ public class LootDescription : ScriptableObject
     }
 
     public Drop SelectDropRandomly()
-    {
+    {        
         for (int i = 0; i < drops.Length; i++)
         {
+            //select an random item out of array, so that the drop rates are correct
+            int rndIndex = Random.Range(0, drops.Length);
+
             float rnd = Random.value;
-            DropProbabilityPair pair = drops[i];
+            DropProbabilityPair pair = drops[rndIndex];
 
             if (rnd < pair.Probability)
             {
                 return pair.Drop;
             }
         }
-        return null;
+
+        //to an ensure that always omething is droped -> drop an random item out of array
+        return drops[Random.Range(0, drops.Length)].Drop;
     }
 }
 
